@@ -1,0 +1,3 @@
+./.HomeWork_21.10/authorization.sh: строка 75: break: имеет значение только для циклов «for», «while» или «until»
+./.HomeWork_21.10/authorization.sh: строка 76: синтаксическая ошибка рядом с неожиданным маркером «fi»
+./.HomeWork_21.10/authorization.sh: строка 76: `    fi'
