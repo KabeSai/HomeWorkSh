@@ -44,6 +44,7 @@ do
     fi
     if [[ $user_login -eq 0 ]]
     then
+        clear
         echo "Хорошего дня!"
         break
     fi

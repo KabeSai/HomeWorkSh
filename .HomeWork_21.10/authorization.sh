@@ -7,7 +7,7 @@ do
     read user_login
     if [[ $user_login == 0 ]]
     then
-        echo ""
+        clear
         ./hw_21_10.sh
         break
     fi
@@ -37,7 +37,7 @@ do
             read -t 10 -s user_password
             if [[ $user_password == 0 ]]
             then
-                echo ""
+                clear
                 ./hw_21_10.sh
                 break
             fi
@@ -54,9 +54,11 @@ do
             if [[ $new_flag -eq 1 ]]
             then
                 echo 'Вы успешно вошли!'
+                clear
                 echo "Возвращение в меню..."
                 sleep 4
                 echo ""
+                clear
                 ./hw_21_10.sh
                 break
             else

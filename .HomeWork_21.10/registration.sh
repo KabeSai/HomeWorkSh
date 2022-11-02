@@ -7,7 +7,7 @@ do
     read user_login
     if [[ $user_login == 0 ]]
     then
-        echo ""
+        clear
         ./hw_21_10.sh
         break
     fi
@@ -33,7 +33,7 @@ do
                 read -s user_password
                 if [[ $user_password == 0 ]]
                 then
-                    echo ""
+                    clear
                     ./hw_21_10.sh
                     break
                 fi
@@ -45,6 +45,7 @@ do
                 else
                     echo "$user_login">>./.HomeWork_21.10/database
                     echo "$user_password" | md5sum>>./.HomeWork_21.10/database
+                    clear
                     echo "Спасибо за печеньки!"
                     end_flag=1
                     break
@@ -59,7 +60,7 @@ do
     then
         echo "Возвращение в меню..."
         sleep 4
-        echo ""
+        clear
         ./hw_21_10.sh
         break
     fi
